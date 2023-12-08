@@ -43,7 +43,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:5uwUzSSZpsdF/Pvmnhg2i2MVhWaNHPzryYDj8IB5" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:QIFa90b4B8gZR4eMOucw+PuG87R3Dld0LfRWib0/" show="false"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
@@ -78,7 +78,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:hd6KPHtmrdsCb1nueqK2dybFTdzk31mEYyHv8oHp" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:/5taAP6tLvDxGiBDcO4nZ7R/bN9fGcWsWVs8dKWG" show="false"/>
     <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
@@ -109,7 +109,7 @@
   </parameters>
   <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="960" posY="288">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="String outputTSSH = ((String)globalMap.get(&quot;tSSH_1_STDOUT&quot;));&#xA;String [] values = outputTSSH.split(&quot;\\|&quot;, 6);&#xA;&#xA;StringBuilder sbValid = new StringBuilder();&#xA;StringBuilder sbInvalid = new StringBuilder();&#xA;&#xA;String redundantTexts [] = {&quot;\u001B[31;1m&quot;, &quot;\u001B[0m&quot;};&#xA;values[0] = values[0].replace(redundantTexts[0],&quot;&quot;).replace(redundantTexts[1],&quot;&quot;);&#xA;&#xA;sbValid&#xA;        .append(&quot;[{\&quot;data\&quot;:{&quot;)&#xA;        .append(&quot;\&quot;Name\&quot;:&quot;).append(&quot;\&quot;&quot;).append(values[0].trim()).append(&quot;\&quot;,&quot;)&#xA;        .append(&quot;\&quot;Version\&quot;:&quot;).append(&quot;\&quot;&quot;).append(values[1].trim()).append(&quot;\&quot;,&quot;)&#xA;        .append(&quot;\&quot;Required\&quot;:&quot;).append(&quot;\&quot;&quot;).append(values[2].trim()).append(&quot;\&quot;,&quot;)&#xA;        .append(&quot;\&quot;State\&quot;:&quot;).append(&quot;\&quot;&quot;).append(values[3].trim()).append(&quot;\&quot;,&quot;)&#xA;        .append(&quot;\&quot;Repository\&quot;:&quot;).append(&quot;\&quot;&quot;).append(values[4].trim()).append(&quot;\&quot;,&quot;)&#xA;        .append(&quot;\&quot;Description\&quot;:&quot;).append(&quot;\&quot;&quot;).append(values[5].trim()).append(&quot;\&quot;&quot;)&#xA;        .append(&quot;},&quot;)&#xA;        .append(&quot;\&quot;error\&quot;:{\&quot;message\&quot;:\&quot;\&quot;}&quot;)&#xA;        .append(&quot;}]&quot;);&#xA;&#xA;sbInvalid&#xA;        .append(&quot;[{\&quot;data\&quot;:\&quot;\&quot;,&quot;)&#xA;        .append(&quot;\&quot;error\&quot;:{\&quot;message\&quot;:\&quot;Input data is invalid.\&quot;}&quot;)&#xA;        .append(&quot;}]&quot;);&#xA;&#xA;&#xA;System.out.println(sbValid);&#xA;System.out.println(sbInvalid);&#xA;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="String outputTSSH = ((String)globalMap.get(&quot;tSSH_1_STDOUT&quot;));&#xA;String [] values = outputTSSH.split(&quot;\\|&quot;, 6);&#xA;String redundantTexts [] = {&quot;\u001B[31;1m&quot;, &quot;\u001B[0m&quot;};&#xA;values[0] = values[0].replace(redundantTexts[0],&quot;&quot;).replace(redundantTexts[1],&quot;&quot;);&#xA;&#xA;StringBuilder sbValid = new StringBuilder();&#xA;StringBuilder sbInvalid = new StringBuilder();&#xA;&#xA;&#xA;sbValid&#xA;        .append(&quot;[{\&quot;data\&quot;:{&quot;)&#xA;        .append(&quot;\&quot;Name\&quot;:&quot;).append(&quot;\&quot;&quot;).append(values[0].trim()).append(&quot;\&quot;,&quot;)&#xA;        .append(&quot;\&quot;Version\&quot;:&quot;).append(&quot;\&quot;&quot;).append(values[1].trim()).append(&quot;\&quot;,&quot;)&#xA;        .append(&quot;\&quot;Required\&quot;:&quot;).append(&quot;\&quot;&quot;).append(values[2].trim()).append(&quot;\&quot;,&quot;)&#xA;        .append(&quot;\&quot;State\&quot;:&quot;).append(&quot;\&quot;&quot;).append(values[3].trim()).append(&quot;\&quot;,&quot;)&#xA;        .append(&quot;\&quot;Repository\&quot;:&quot;).append(&quot;\&quot;&quot;).append(values[4].trim()).append(&quot;\&quot;,&quot;)&#xA;        .append(&quot;\&quot;Description\&quot;:&quot;).append(&quot;\&quot;&quot;).append(values[5].trim()).append(&quot;\&quot;&quot;)&#xA;        .append(&quot;},&quot;)&#xA;        .append(&quot;\&quot;error\&quot;:{\&quot;message\&quot;:\&quot;\&quot;}&quot;)&#xA;        .append(&quot;}]&quot;);&#xA;&#xA;sbInvalid&#xA;        .append(&quot;[{\&quot;data\&quot;:\&quot;\&quot;,&quot;)&#xA;        .append(&quot;\&quot;error\&quot;:{\&quot;message\&quot;:\&quot;Input data is invalid.\&quot;}&quot;)&#xA;        .append(&quot;}]&quot;);&#xA;&#xA;&#xA;System.out.println(sbValid);&#xA;System.out.println(sbInvalid);&#xA;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_1"/>
@@ -204,12 +204,12 @@
     <elementParameter field="TEXT" name="PORT" value="8101"/>
     <elementParameter field="TEXT" name="USER" value="&quot;tadmin&quot;"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" value="KEYBOARDINTERACTIVE"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:53dc0XNcXqeZEnNAd/mK/N/G3KuPP9nJmWdECaNy0urjG8NN"/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:M5sC6vPvkIP3OFJQrZJA1i7vQ0fzPKXK9WKt5qtVKs4TyYR5"/>
     <elementParameter field="CHECK" name="PTY" value="false"/>
     <elementParameter field="CLOSED_LIST" name="STANDARDOUTPUT" value="TO_CONSOLE_AND_GLOBAL_VARIABLE"/>
     <elementParameter field="CLOSED_LIST" name="ERROROUTPUT" value="TO_CONSOLE_AND_GLOBAL_VARIABLE"/>
     <elementParameter field="FILE" name="PRIVATEKEY" value="&quot;/.ssh/id_dsa&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASSPHRASE" value="enc:system.encryption.key.v1:Jg92+jLKrDXSYJh2uE9hU/ajb5cO6RSy1ooKm1Ar8pX/IWEr" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" value="enc:system.encryption.key.v1:57FaghTRoDvqa2T6r1slbc36Hv+pCMJFA0TwWHnXFAPPckNo" show="false"/>
     <elementParameter field="TEXT" name="COMMANDSEPARATOR" value="&quot;;&quot;"/>
     <elementParameter field="TABLE" name="COMMANDS">
       <elementValue elementRef="COMMAND" value="globalMap.get(&quot;command&quot;)"/>
