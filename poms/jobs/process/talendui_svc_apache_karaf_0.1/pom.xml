@@ -9,10 +9,10 @@
     <relativePath>../../../</relativePath>
   </parent>
   <groupId>org.example.interaction_ts_apache_karaf.service</groupId>
-  <artifactId>CICD_SVC_REST_APACHE_KARAF</artifactId>
+  <artifactId>TALENDUI_SVC_APACHE_KARAF</artifactId>
   <version>0.1.0</version>
   <packaging>bundle</packaging>
-  <name>INTERACTION_TS_APACHE_KARAF CICD_SVC_REST_APACHE_KARAF-${project.version} (0.1,Job Designs) Bundle</name>
+  <name>INTERACTION_TS_APACHE_KARAF TALENDUI_SVC_APACHE_KARAF-${project.version} (0.1,Job Designs) Bundle</name>
   <properties>
     <talend.job.type>Standard</talend.job.type>
     <talend.pigudf.groupid>org.example.interaction_ts_apache_karaf.pigudf</talend.pigudf.groupid>
@@ -46,7 +46,7 @@
     <current.test.resources.dir>${basedir}/src/test/resources</current.test.resources.dir>
     <project.distribution-management.repository.url>${project.distributionManagement.repository.url}</project.distribution-management.repository.url>
     <current.bundle.resources.dir>${basedir}/src/main/bundle-resources</current.bundle.resources.dir>
-    <talend.job.name>CICD_SVC_REST_APACHE_KARAF</talend.job.name>
+    <talend.job.name>TALENDUI_SVC_APACHE_KARAF</talend.job.name>
     <bundle.config.bundle.classpath>@BundleConfigBundleClasspath@</bundle.config.bundle.classpath>
     <provided.lib.path>${current.bundle.resources.dir}/provided-lib</provided.lib.path>
     <bundle.config.export.service>@BundleConfigExportService@</bundle.config.export.service>
@@ -497,6 +497,17 @@
       <groupId>org.glassfish.jaxb</groupId>
       <artifactId>jaxb-runtime</artifactId>
       <version>2.3.2</version>
+      <exclusions>
+        <exclusion>
+          <artifactId>*</artifactId>
+          <groupId>*</groupId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>jaxen</groupId>
+      <artifactId>jaxen</artifactId>
+      <version>1.1.6</version>
       <exclusions>
         <exclusion>
           <artifactId>*</artifactId>

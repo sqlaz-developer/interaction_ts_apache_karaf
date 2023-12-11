@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_1Ir-YJgYEe6pkqsecJ-ecw" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_-V_bcJgYEe6pkqsecJ-ecw" comment="" name="sshhost" prompt="sshhost?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="localhost"/>
+  <contextParameter xmi:id="_-V_bcZgYEe6pkqsecJ-ecw" comment="" name="sshport" prompt="sshport?" promptNeeded="false" repositoryContextId="built-in" type="id_Integer" value="8101"/>
+  <contextParameter xmi:id="_-V_bcpgYEe6pkqsecJ-ecw" comment="" name="sshusername" prompt="sshusername?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="tadmin"/>
+  <contextParameter xmi:id="_-V_bc5gYEe6pkqsecJ-ecw" comment="" name="sshpassword" prompt="sshpassword?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="tadmin"/>
+</talendfile:ContextType>
