@@ -11,7 +11,7 @@
   <groupId>org.example.interaction_ts_apache_karaf.code</groupId>
   <artifactId>routines</artifactId>
   <version>8.0.1</version>
-  <name>INTERACTION_TS_APACHE_KARAF Routines</name>
+  <name>INTEGRATION_PROJECT Routines</name>
   <properties>
     <talend.codes.package>routines</talend.codes.package>
     <maven.compiler.failOnError>${codes.compile.failOnError}</maven.compiler.failOnError>

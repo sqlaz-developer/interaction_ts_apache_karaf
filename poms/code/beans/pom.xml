@@ -11,7 +11,7 @@
   <groupId>org.example.interaction_ts_apache_karaf.bean</groupId>
   <artifactId>beans</artifactId>
   <version>8.0.1</version>
-  <name>INTERACTION_TS_APACHE_KARAF Beans</name>
+  <name>INTEGRATION_PROJECT Beans</name>
   <properties>
     <talend.codes.package>beans</talend.codes.package>
     <maven.compiler.failOnError>${codes.compile.failOnError}</maven.compiler.failOnError>
