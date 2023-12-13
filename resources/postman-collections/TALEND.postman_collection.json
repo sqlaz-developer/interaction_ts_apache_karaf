@@ -1,0 +1,265 @@
+{
+	"info": {
+		"_postman_id": "9a8542bd-e35b-4fef-945c-1021cf6c23d9",
+		"name": "TALEND",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12997133"
+	},
+	"item": [
+		{
+			"name": "TALENDUI_SVC_KARAF",
+			"item": [
+				{
+					"name": "GET_FEATURES",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"featureName\": \"camel-spring\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8090/talendui/karaf/features/get",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8090",
+							"path": [
+								"talendui",
+								"karaf",
+								"features",
+								"get"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "COMMAND_EXEC",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"command\": \"feature:list | grep camel-spring\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8090/talendui/karaf/execute",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8090",
+							"path": [
+								"talendui",
+								"karaf",
+								"execute"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PRACTICE-TALEND",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI0Ri1JY0dMU3JjaDEyQ1gzVmQybHUxZzJQOE5tTEdKejhMa2REamhISmpFIn0.eyJleHAiOjE3MDE3NzY4NDgsImlhdCI6MTcwMTc3NjU0OCwianRpIjoiODc3ZmI4NjAtM2MzZC00ZGMwLTljMGYtNmMyZTQ0MWI3ZjlhIiwiaXNzIjoiaHR0cHM6Ly9hdXRoLmVzYmRldi5hbmRyaXR6LmNvbS9hdXRoL3JlYWxtcy9hbmRyaXR6IiwiYXVkIjpbImVzYi1zZXJ2aWNlcy1zZXJ2ZXIiLCJhY2NvdW50Il0sInN1YiI6ImRlMzBiZWM5LTAwNGItNDQzMS1iNTYwLWMwYTAzZWE3NDczYSIsInR5cCI6IkJlYXJlciIsImF6cCI6ImVzYi1zZXJ2aWNlcy1jbGllbnQiLCJzZXNzaW9uX3N0YXRlIjoiMmU3YjM1ODUtMDcwOC00NWE5LWI3YzMtNzg2N2VhYTgzNzhkIiwiYWNyIjoiMSIsInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiZXNiLXNlcnZpY2VzLXNlcnZlciI6eyJyb2xlcyI6WyJ3cy1jaGluYSIsIndzLXNybSIsIndzLXRhbGVuZHVpIiwid3Mta2V0byIsIndzLWl0ZmluYW5jZSIsIndzLXNhcCIsIndzLWFnaXMiLCJ3cy1zcHJpbmtsciIsIndzLWlkZWFzIiwid3MtY2ljZCIsInVpIiwid3MtbmV3bGFiIiwid3Mtam90YmFyIiwid3MtcHVibGljIiwid3MtdGVhbWNlbnRlciIsIndzLWhyIiwid3MtaWRtIiwid3MtY29yZSIsInVzZXIiLCJ3cy1lY3MiXX0sImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoicHJvZmlsZSIsIm5hbWUiOiJTUUxBWiBEZXZlbG9wZXIiLCJwcmVmZXJyZWRfdXNlcm5hbWUiOiJlc2JleHQwMyIsImdpdmVuX25hbWUiOiJTUUxBWiIsImZhbWlseV9uYW1lIjoiRGV2ZWxvcGVyIn0.hRq9uebNa7xmtzo5dafWncLBd2q7QWuyDsmgmiBinxmHNlefTF7m2DnxfeAmH2-uHgRCt-JkZDiy9ELUNdQ0H79iTQqRUIAdE2HMi9znAwf8kMhlbUnOgj7IEDzA9FrPazl5jOjIVO-qMj9v65t11sAcjcv4vN8bAMEne78rdMj-8T8RDHUKaEJeyAnhJwLXebrcI4NnxxPWyoDTUN08NqeN3EAgQWytKxxPFZG1xaNRg3HUwJ3JKBNXqDP40U3iUOT-tmmV4zQX9XGNtlhbAjOMAyMqKTTfM0tb_WtZAGmyN029MmYLgvnL4ArtISbFcms-QHeAUvzKBCPf5CIYMQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Joe\",\r\n    \"city\":\"London\",\r\n    \"age\":\"22\",\r\n    \"salary\":\"3000\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://api.esbdev.andritz.com/services/nasrulla/calculate",
+							"protocol": "https",
+							"host": [
+								"api",
+								"esbdev",
+								"andritz",
+								"com"
+							],
+							"path": [
+								"services",
+								"nasrulla",
+								"calculate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TALEND_AUTH",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "username",
+									"value": "esbext03",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "R8EwUcM7XJ4jGuqbf6k2te",
+									"type": "text"
+								},
+								{
+									"key": "client_id",
+									"value": "esb-services-client",
+									"type": "text"
+								},
+								{
+									"key": "grant_type",
+									"value": "password",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://auth.esbdev.andritz.com/auth/realms/andritz/protocol/openid-connect/token",
+							"protocol": "https",
+							"host": [
+								"auth",
+								"esbdev",
+								"andritz",
+								"com"
+							],
+							"path": [
+								"auth",
+								"realms",
+								"andritz",
+								"protocol",
+								"openid-connect",
+								"token"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "STATUS",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8090/talendui/karaf/status",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8090",
+							"path": [
+								"talendui",
+								"karaf",
+								"status"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "INSTALL_FEATURE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"featureName\": \"camel-spring-ws\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8090/talendui/karaf/install",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8090",
+							"path": [
+								"talendui",
+								"karaf",
+								"install"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UNINSTALL_FEATURE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"featureName\": \"s\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8090/talendui/karaf/uninstall",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8090",
+							"path": [
+								"talendui",
+								"karaf",
+								"uninstall"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

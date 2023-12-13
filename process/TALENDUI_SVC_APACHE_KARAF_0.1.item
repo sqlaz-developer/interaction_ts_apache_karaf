@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendXMLMap="http://www.talend.org/xmlmap" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
+<talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendMapper="http://www.talend.org/mapper" xmlns:TalendXMLMap="http://www.talend.org/xmlmap" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
   <context confirmationNeeded="false" name="Default">
     <contextParameter comment="" name="new1" prompt="new1?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_SL5KsJggEe64pLRmafbJpg"/>
     <contextParameter comment="" name="sshhost" prompt="sshhost?" promptNeeded="false" repositoryContextId="_1IbfsJgYEe6pkqsecJ-ecw" type="id_String" value="localhost" internalId="_SL5KsZggEe64pLRmafbJpg"/>
@@ -49,7 +49,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:FhpU5Vdh4Ofc52p4gtFB6db3SxZCJ3uEPZkv+gwF" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:T+lor4JldWVhfDME2rqkzRryz1z4PYMPruS/r4VD" show="false"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
@@ -84,7 +84,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:0tIxgZjumNDfgEB5X4ro4NfcbOPVBYoYoK1MRuin" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:YbmDLnhpgABjvHEkkhSCUun8Xd7f/cILS45Oiq1w" show="false"/>
     <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
@@ -113,7 +113,7 @@
     <routinesParameter id="_NKCZMJWVEe6ste-JhJ5Khg" name="TalendString"/>
     <routinesParameter id="_NKNYUJWVEe6ste-JhJ5Khg" name="TalendStringUtil"/>
   </parameters>
-  <node componentName="tRESTRequest" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="128" posY="544">
+  <node componentName="tRESTRequest" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="128" posY="448">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTRequest_1" show="false"/>
     <elementParameter field="TEXT" name="API_ID" value="" show="false"/>
     <elementParameter field="TEXT" name="REST_ENDPOINT" value="&quot;/talendui/karaf&quot;"/>
@@ -187,7 +187,7 @@
       <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tExtractJSONFields" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="640">
+  <node componentName="tExtractJSONFields" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="448">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tExtractJSONFields_1" show="false"/>
     <elementParameter field="CLOSED_LIST" name="READ_BY" value="JSONPATH"/>
     <elementParameter field="CLOSED_LIST" name="JSON_PATH_VERSION" value="2_1_0"/>
@@ -223,7 +223,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="544" posY="640">
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="544" posY="448">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_2" show="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="String command = &quot;feature:list | grep &quot; + input_row.featureName;&#xD;&#xA;output_row.command = command;&#xA;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
@@ -233,18 +233,18 @@
       <column comment="" key="false" length="-1" name="command" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tSSH" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="736" posY="640">
+  <node componentName="tSSH" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="736" posY="448">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSSH_1" show="false"/>
     <elementParameter field="TEXT" name="HOST" value="context.sshhost"/>
     <elementParameter field="TEXT" name="PORT" value="context.sshport"/>
     <elementParameter field="TEXT" name="USER" value="context.sshusername"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" value="PASSWORD"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:jyB/3VJeLoFeC36t33FGGnpcjXtjiwjerN1X3h9S8hFAEBQRl5p+Rb5HyZNiZ7s="/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:E4SlNxklD4gFC14aJjnO12+3BGVFkidMLqSzS/QNuzeSJRIrMr7+/vHtV2lCK54="/>
     <elementParameter field="CHECK" name="PTY" value="false"/>
     <elementParameter field="CLOSED_LIST" name="STANDARDOUTPUT" value="TO_GLOBAL_VARIABLE"/>
     <elementParameter field="CLOSED_LIST" name="ERROROUTPUT" value="TO_GLOBAL_VARIABLE"/>
     <elementParameter field="FILE" name="PRIVATEKEY" value="&quot;/.ssh/id_dsa&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASSPHRASE" value="enc:system.encryption.key.v1:0npQOddh9SdEHM87yPWLZWD8O13aOwtG7GCCdQkG+uT5W72J" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" value="enc:system.encryption.key.v1:EeneICcEYnPbxV3eOZEXFa3mu4OONRU3xlsYedTUbqoMHB+C" show="false"/>
     <elementParameter field="TEXT" name="COMMANDSEPARATOR" value="&quot;;&quot;"/>
     <elementParameter field="TABLE" name="COMMANDS">
       <elementValue elementRef="COMMAND" value="row2.command"/>
@@ -278,7 +278,7 @@
       <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="352" posY="448">
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="352" posY="352">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_3" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false" show="false"/>
@@ -301,7 +301,7 @@
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.6/@nodeData/@inputTrees.0/@nodes.3" target="//@node.6/@nodeData/@outputTrees.0/@nodes.0"/>
     </nodeData>
   </node>
-  <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="544" posY="448">
+  <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="544" posY="352">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTResponse_4" show="false"/>
     <elementParameter field="REST_RESPONSE_SCHEMA_TYPE" name="RESPONSE_TYPE" value="id_String"/>
     <elementParameter field="CLOSED_LIST" name="STATUS_CODE" value="400"/>
@@ -315,7 +315,7 @@
       <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tExtractJSONFields" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="832">
+  <node componentName="tExtractJSONFields" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="576">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tExtractJSONFields_2" show="false"/>
     <elementParameter field="CLOSED_LIST" name="READ_BY" value="JSONPATH"/>
     <elementParameter field="CLOSED_LIST" name="JSON_PATH_VERSION" value="2_1_0"/>
@@ -351,18 +351,18 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tSSH" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="736" posY="832">
+  <node componentName="tSSH" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="736" posY="576">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSSH_2" show="false"/>
     <elementParameter field="TEXT" name="HOST" value="context.sshhost"/>
     <elementParameter field="TEXT" name="PORT" value="context.sshport"/>
     <elementParameter field="TEXT" name="USER" value="context.sshusername"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" value="PASSWORD"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:wQodoYQLKxwGHlepUYejt2bASo/E2nexjjOEisFI+faDQyHjc2MRElpBZza5JUQ="/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:t8xwjqNkXggCOBvZ+PzVcLJoqdKSAv+ScA32aM/ArfbAB8lq6MUEQZqdUap7R2U="/>
     <elementParameter field="CHECK" name="PTY" value="false"/>
     <elementParameter field="CLOSED_LIST" name="STANDARDOUTPUT" value="TO_GLOBAL_VARIABLE"/>
     <elementParameter field="CLOSED_LIST" name="ERROROUTPUT" value="TO_GLOBAL_VARIABLE"/>
     <elementParameter field="FILE" name="PRIVATEKEY" value="&quot;/.ssh/id_dsa&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASSPHRASE" value="enc:system.encryption.key.v1:1nD2urpEnvVef8fzrahXKeiIVMjcPsIrH/ch0zoYTW4vxz2y" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" value="enc:system.encryption.key.v1:jz1aALHcYd+yTYNJdFMB3xksv5TDULvaW5xraN/9HpX++kVa" show="false"/>
     <elementParameter field="TEXT" name="COMMANDSEPARATOR" value="&quot;;&quot;"/>
     <elementParameter field="TABLE" name="COMMANDS">
       <elementValue elementRef="COMMAND" value="row4.command"/>
@@ -375,7 +375,7 @@
       <column comment="" key="false" length="-1" name="command" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tExtractJSONFields" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="1184">
+  <node componentName="tExtractJSONFields" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="704">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tExtractJSONFields_3" show="false"/>
     <elementParameter field="CLOSED_LIST" name="READ_BY" value="JSONPATH"/>
     <elementParameter field="CLOSED_LIST" name="JSON_PATH_VERSION" value="2_1_0"/>
@@ -411,7 +411,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="544" posY="1184">
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="544" posY="704">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_3" show="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="String command = &quot;feature:list | grep &quot; + input_row.featureName;&#xD;&#xA;output_row.command = command;&#xA;globalMap.put(&quot;featureName&quot;, input_row.featureName);&#xA;globalMap.put(&quot;featureCommand&quot;, command);&#xA;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
@@ -421,18 +421,18 @@
       <column comment="" key="false" length="-1" name="command" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tSSH" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="736" posY="1184">
+  <node componentName="tSSH" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="736" posY="704">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSSH_3" show="false"/>
     <elementParameter field="TEXT" name="HOST" value="context.sshhost"/>
     <elementParameter field="TEXT" name="PORT" value="context.sshport"/>
     <elementParameter field="TEXT" name="USER" value="context.sshusername"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" value="PASSWORD"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:J2DVr3Kws73GsKOxXEjjILGTEgT6NpL8F04/qloBQq1qItm9KUXZ0tK64YsZbpY="/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:vLE9fW4g+tq+NIT7bHSEjMsopMVueK1bu4+VKIfcXXf3xkeI1XU2N8OaH/YjATE="/>
     <elementParameter field="CHECK" name="PTY" value="false"/>
     <elementParameter field="CLOSED_LIST" name="STANDARDOUTPUT" value="TO_GLOBAL_VARIABLE"/>
     <elementParameter field="CLOSED_LIST" name="ERROROUTPUT" value="TO_GLOBAL_VARIABLE"/>
     <elementParameter field="FILE" name="PRIVATEKEY" value="&quot;/.ssh/id_dsa&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASSPHRASE" value="enc:system.encryption.key.v1:cUDM/bcXUBrP+spwwTkG2DcjZzOrdf84d1SUmTxP94cRWSWL" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" value="enc:system.encryption.key.v1:IWrtA4aM2XlhIKMXq6n4xTqK6aBMUboRJ0e2OQ4LlSI/lQoO" show="false"/>
     <elementParameter field="TEXT" name="COMMANDSEPARATOR" value="&quot;;&quot;"/>
     <elementParameter field="TABLE" name="COMMANDS">
       <elementValue elementRef="COMMAND" value="row9.command"/>
@@ -443,7 +443,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tSSH_3"/>
   </node>
-  <node componentName="tExtractJSONFields" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="1536">
+  <node componentName="tExtractJSONFields" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="352" posY="928">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tExtractJSONFields_4" show="false"/>
     <elementParameter field="CLOSED_LIST" name="READ_BY" value="JSONPATH"/>
     <elementParameter field="CLOSED_LIST" name="JSON_PATH_VERSION" value="2_1_0"/>
@@ -479,7 +479,7 @@
       <column defaultValue="" key="false" length="255" name="errorMessage" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="544" posY="1536">
+  <node componentName="tJavaRow" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="544" posY="928">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJavaRow_4" show="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="String command = &quot;feature:list | grep &quot; + input_row.featureName;&#xD;&#xA;output_row.command = command;&#xA;globalMap.put(&quot;featureName&quot;, input_row.featureName);&#xA;globalMap.put(&quot;featureCommand&quot;, command);&#xA;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
@@ -489,18 +489,18 @@
       <column comment="" key="false" length="-1" name="command" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tSSH" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="736" posY="1536">
+  <node componentName="tSSH" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="736" posY="928">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSSH_6" show="false"/>
     <elementParameter field="TEXT" name="HOST" value="context.sshhost"/>
     <elementParameter field="TEXT" name="PORT" value="context.sshport"/>
     <elementParameter field="TEXT" name="USER" value="context.sshusername"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" value="PASSWORD"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:8gHpjkGwhqP51alRLsfymHc/3Woz+X3uHKVE3d0o6VXRNHyWgyKq5D9Zqjl6K34="/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:mAQsYE0kd+AhZrQKdHOy+o3zMpwrb26eBLdPpmk/WEO7ywYGcO9LhNxYdrp7gY8="/>
     <elementParameter field="CHECK" name="PTY" value="false"/>
     <elementParameter field="CLOSED_LIST" name="STANDARDOUTPUT" value="TO_GLOBAL_VARIABLE"/>
     <elementParameter field="CLOSED_LIST" name="ERROROUTPUT" value="TO_GLOBAL_VARIABLE"/>
     <elementParameter field="FILE" name="PRIVATEKEY" value="&quot;/.ssh/id_dsa&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASSPHRASE" value="enc:system.encryption.key.v1:LWAsS6GE+4gyqCzZTuzJlpXv2T4mf5oeZ6J+5xipmguPPm2h" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" value="enc:system.encryption.key.v1:vY8RevArmLyTr8cJ+VjytJlLCvRZ2ONmH6GZ17q3sb+6RP1z" show="false"/>
     <elementParameter field="TEXT" name="COMMANDSEPARATOR" value="&quot;;&quot;"/>
     <elementParameter field="TABLE" name="COMMANDS">
       <elementValue elementRef="COMMAND" value="row13.command"/>
@@ -615,7 +615,7 @@
         <nodes name="code" type="id_Integer" xpath="error/code"/>
       </inputTrees>
       <outputTrees expressionFilter="" name="errorResponse">
-        <nodes name="body" expression="&quot;\&quot;data\&quot;:{},\&quot;error\&quot;:{\&quot;message\&quot;:\&quot;&quot; + error.message + &quot;\&quot;}&quot;; " type="id_String" incomingConnections="//@node.18/@nodeData/@connections.0" xpath="errorResponse/body"/>
+        <nodes name="body" expression="&quot;{\&quot;data\&quot;:[],\&quot;error\&quot;:{\&quot;message\&quot;:\&quot;&quot; + error.message + &quot;\&quot;}}&quot;; " type="id_String" incomingConnections="//@node.18/@nodeData/@connections.0" xpath="errorResponse/body"/>
       </outputTrees>
       <varTables name="Var" minimized="true"/>
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.18/@nodeData/@inputTrees.0/@nodes.10" target="//@node.18/@nodeData/@outputTrees.0/@nodes.0"/>
@@ -634,7 +634,7 @@
       <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="992" posY="640">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="992" posY="448">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_1" show="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="String outputTSSH = ((String)globalMap.get(&quot;tSSH_1_STDOUT&quot;)).replaceAll(&quot;\\x1b\\[[0-9;]*[mGKHF]&quot;, &quot;&quot;);&#xA;String [] features = outputTSSH.split(&quot;\n&quot;);&#xA;&#xA;JSONObject rootObj = new JSONObject();&#xA;JSONArray dataObj = new JSONArray();&#xA;JSONObject errorObj = new JSONObject();&#xA;&#xA;rootObj.put(&quot;data&quot;, dataObj);&#xA;rootObj.put(&quot;error&quot;, errorObj);&#xA;&#xA;if (outputTSSH == null || outputTSSH.equals(&quot;&quot;)) {&#xA;&#x9;errorObj.put(&quot;message&quot;, &quot;Feature not found&quot;);&#xA;} &#xA;&#xA;else {&#xA;&#xA;    for(String feature: features) {&#xA;&#xA;&#x9;&#x9;String [] values = feature.split(&quot;\\|&quot;, 6);&#xA;&#x9;&#xA;&#x9;&#x9;JSONObject obj = new JSONObject();&#xA;&#x9;&#x9;dataObj.put(obj);&#xA;&#xA;&#x9;&#x9;obj.put(&quot;Name&quot;, values[0].trim());&#xA;&#x9;&#x9;obj.put(&quot;Version&quot;, values[1].trim());&#xA;&#x9;&#x9;obj.put(&quot;Required&quot;, values[2].trim());&#xA;&#x9;&#x9;obj.put(&quot;State&quot;, values[3].trim());&#xA;&#x9;&#x9;obj.put(&quot;Repository&quot;, values[4].trim());&#xA;&#x9;&#x9;obj.put(&quot;Description&quot;, values[5].trim());&#xA;&#x9;}&#xA;}&#xA;&#xA;row3.body = rootObj.toString();&#xA;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
@@ -643,7 +643,7 @@
       <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1184" posY="640">
+  <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1184" posY="448">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTResponse_1" show="false"/>
     <elementParameter field="REST_RESPONSE_SCHEMA_TYPE" name="RESPONSE_TYPE" value="id_String"/>
     <elementParameter field="CLOSED_LIST" name="STATUS_CODE" value="200"/>
@@ -657,7 +657,7 @@
       <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="992" posY="832">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="992" posY="576">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_2" show="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="String outputTSSH = ((String)globalMap.get(&quot;tSSH_2_STDOUT&quot;)).replaceAll(&quot;\\x1b\\[[0-9;]*[mGKHF]&quot;, &quot;&quot;);&#xA;JSONObject rootObj = new JSONObject();&#xA;JSONObject dataObj = new JSONObject();&#xA;JSONObject errorObj = new JSONObject();&#xA;&#xA;rootObj.put(&quot;data&quot;, dataObj);&#xA;rootObj.put(&quot;error&quot;, errorObj);&#xA;&#xA;if (outputTSSH == null || outputTSSH.equals(&quot;&quot;)) {&#xA;&#x9;errorObj.put(&quot;message&quot;, &quot;Command should not be empty.&quot;);&#xA;} &#xA;&#xA;else {&#xA;&#x9;dataObj.put(&quot;message&quot;, outputTSSH);&#xA;}&#xA;&#xA;System.out.println(&quot;SSH output is:&quot; + outputTSSH);&#xA;&#xA;row7.body = rootObj.toString();&#xA;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
@@ -666,7 +666,7 @@
       <column comment="" key="false" length="-1" name="body" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1184" posY="832">
+  <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1184" posY="576">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTResponse_5" show="false"/>
     <elementParameter field="REST_RESPONSE_SCHEMA_TYPE" name="RESPONSE_TYPE" value="id_String"/>
     <elementParameter field="CLOSED_LIST" name="STATUS_CODE" value="200"/>
@@ -680,9 +680,9 @@
       <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="992" posY="1184">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="992" posY="704">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_3" show="false"/>
-    <elementParameter field="MEMO_JAVA" name="CODE" value="String output = ((String)globalMap.get(&quot;tSSH_3_STDOUT&quot;)).replaceAll(&quot;\\x1b\\[[0-9;]*[mGKHF]&quot;, &quot;&quot;);&#xA;String featureName = (String)globalMap.get(&quot;featureName&quot;);&#xA;JSONObject rootObj = new JSONObject();&#xA;JSONArray dataObj = new JSONArray();&#xA;JSONObject errorObj = new JSONObject();&#xA;rootObj.put(&quot;data&quot;, dataObj);&#xA;rootObj.put(&quot;error&quot;, errorObj);&#xA;String result = &quot;&quot;;&#xA;String command = &quot;&quot;;&#xA;//check if result is empty&#xA;if(output == null || output.equals(&quot;&quot;)){&#xA;&#x9;errorObj.put(&quot;message&quot;, &quot;Feature not found&quot;);&#xA;}&#xA;//result contains data&#xA;else {&#xA;&#x9;String[] rows = output.split(&quot;\n&quot;);&#xA;&#x9;boolean isFound = false;&#xA;&#x9;&#xA;&#x9;for(String row : rows){&#xA;&#x9;&#x9;String[] parts = row.split(&quot;\\|&quot;, 6);&#xA;&#x9;&#x9;&#xA;&#x9;&#x9;//check if we have exact match&#xA;&#x9;&#x9;if(featureName.equals(parts[0].trim())){&#xA;&#x9;&#x9;&#x9;isFound = true;&#xA;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;&#x9;//check feature state: if it is Uninstalled&#xA;&#x9;&#x9;&#x9;if(&quot;Uninstalled&quot;.equals(parts[3].trim())){&#xA;&#x9;&#x9;&#x9;&#x9;command = &quot;feature:install &quot; + featureName;&#xA;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;&#x9;else if(&quot;Uninstalled&quot;.equals(parts[3].trim())) {&#xA;&#x9;&#x9;&#x9;&#x9;errorObj.put(&quot;message&quot;, &quot;Feature is already installed&quot;);&#xA;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;}&#xA;&#x9;}&#xA;&#x9;&#xA;&#x9;if(!isFound){&#xA;&#x9;&#x9;errorObj.put(&quot;message&quot;, &quot;Feature not found&quot;);&#xA;&#x9;}&#xA;}&#xA;result = rootObj.toString();&#xA;row10.command = command;&#xA;row10.result = result;"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="String output = ((String)globalMap.get(&quot;tSSH_3_STDOUT&quot;)).replaceAll(&quot;\\x1b\\[[0-9;]*[mGKHF]&quot;, &quot;&quot;);&#xA;String featureName = (String)globalMap.get(&quot;featureName&quot;);&#xA;JSONObject rootObj = new JSONObject();&#xA;JSONArray dataObj = new JSONArray();&#xA;JSONObject errorObj = new JSONObject();&#xA;rootObj.put(&quot;data&quot;, dataObj);&#xA;rootObj.put(&quot;error&quot;, errorObj);&#xA;String result = &quot;&quot;;&#xA;String command = &quot;&quot;;&#xA;//check if result is empty&#xA;if(output == null || output.equals(&quot;&quot;)){&#xA;&#x9;errorObj.put(&quot;message&quot;, &quot;Feature not found&quot;);&#xA;}&#xA;//result contains data&#xA;else {&#xA;&#x9;String[] rows = output.split(&quot;\n&quot;);&#xA;&#x9;boolean isFound = false;&#xA;&#x9;&#xA;&#x9;for(String row : rows){&#xA;&#x9;&#x9;String[] parts = row.split(&quot;\\|&quot;, 6);&#xA;&#x9;&#x9;&#xA;&#x9;&#x9;//check if we have exact match&#xA;&#x9;&#x9;if(featureName.equals(parts[0].trim())){&#xA;&#x9;&#x9;&#x9;isFound = true;&#xA;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;&#x9;//check feature state: if it is Uninstalled&#xA;&#x9;&#x9;&#x9;if(&quot;Uninstalled&quot;.equals(parts[3].trim())){&#xA;&#x9;&#x9;&#x9;&#x9;command = &quot;feature:install &quot; + featureName;&#xA;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;&#x9;else if(&quot;Started&quot;.equals(parts[3].trim())) {&#xA;&#x9;&#x9;&#x9;&#x9;errorObj.put(&quot;message&quot;, &quot;Feature is already installed&quot;);&#xA;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;}&#xA;&#x9;}&#xA;&#x9;&#xA;&#x9;if(!isFound){&#xA;&#x9;&#x9;errorObj.put(&quot;message&quot;, &quot;Feature not found&quot;);&#xA;&#x9;}&#xA;}&#xA;result = rootObj.toString();&#xA;row10.command = command;&#xA;row10.result = result;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tJava_3">
@@ -690,7 +690,7 @@
       <column comment="" key="false" length="-1" name="command" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="1184" posY="1344">
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="1184" posY="704">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_1" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false" show="false"/>
@@ -720,18 +720,18 @@
       <connections xsi:type="TalendXMLMap:FilterConnection" source="//@node.25/@nodeData/@inputTrees.0/@nodes.1" target="//@node.25/@nodeData/@outputTrees.1"/>
     </nodeData>
   </node>
-  <node componentName="tSSH" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1440" posY="1184">
+  <node componentName="tSSH" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1440" posY="704">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSSH_4" show="false"/>
     <elementParameter field="TEXT" name="HOST" value="context.sshhost"/>
     <elementParameter field="TEXT" name="PORT" value="context.sshport"/>
     <elementParameter field="TEXT" name="USER" value="context.sshusername"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" value="PASSWORD"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:V1wg4wHC/dusonc/qkVervzMOSUO3t9CbIFila0EwNRVqwbi6zv2ztuayWSQpys="/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:Kw8KcTLF8K7xSLLaP6viy4tO6Uquy7DhajTBaXo3Uile12VUTnPHHV8GJz4brWM="/>
     <elementParameter field="CHECK" name="PTY" value="false"/>
     <elementParameter field="CLOSED_LIST" name="STANDARDOUTPUT" value="TO_CONSOLE"/>
     <elementParameter field="CLOSED_LIST" name="ERROROUTPUT" value="TO_CONSOLE"/>
     <elementParameter field="FILE" name="PRIVATEKEY" value="&quot;/.ssh/id_dsa&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASSPHRASE" value="enc:system.encryption.key.v1:/4domWxbkKPs/3AKqU+lCZPKHG3yzk0oOYQMTsWf1Br+mxL9" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" value="enc:system.encryption.key.v1:M+JJHME2+75mrndajtwi6yfbafQ284M7aDyl4uXRGqM15LAU" show="false"/>
     <elementParameter field="TEXT" name="COMMANDSEPARATOR" value="&quot;;&quot;"/>
     <elementParameter field="TABLE" name="COMMANDS">
       <elementValue elementRef="COMMAND" value="installFeature.installCommand"/>
@@ -744,7 +744,7 @@
       <column comment="" key="false" length="-1" name="installCommand" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1440" posY="1344">
+  <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1440" posY="800">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTResponse_6" show="false"/>
     <elementParameter field="REST_RESPONSE_SCHEMA_TYPE" name="RESPONSE_TYPE" value="id_String"/>
     <elementParameter field="CLOSED_LIST" name="STATUS_CODE" value="400"/>
@@ -758,18 +758,18 @@
       <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tSSH" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1664" posY="1184">
+  <node componentName="tSSH" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1664" posY="704">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSSH_5" show="false"/>
     <elementParameter field="TEXT" name="HOST" value="context.sshhost"/>
     <elementParameter field="TEXT" name="PORT" value="context.sshport"/>
     <elementParameter field="TEXT" name="USER" value="context.sshusername"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" value="PASSWORD"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:4L3hTwBB8wgq1VnKCqiuj01PeMT4ABTPnClS7uoQBH3E7FciiwmbgKxxg9uIFzU="/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:bP+9MtCBl9CzdgfJ+jYzO5Xg8TOGlMq9ZOhNlenRSxiFuzntm+gDO3ILi7LJSwc="/>
     <elementParameter field="CHECK" name="PTY" value="false"/>
     <elementParameter field="CLOSED_LIST" name="STANDARDOUTPUT" value="TO_GLOBAL_VARIABLE"/>
     <elementParameter field="CLOSED_LIST" name="ERROROUTPUT" value="TO_GLOBAL_VARIABLE"/>
     <elementParameter field="FILE" name="PRIVATEKEY" value="&quot;/.ssh/id_dsa&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASSPHRASE" value="enc:system.encryption.key.v1:cojsE79/X8HKj3s1ISfkFI3xMdF0bwus+eya6MiKUzO7D2jq" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" value="enc:system.encryption.key.v1:oipV/iqH7YFbmYWPWceoSWo4JPGP81x5Lns27LhGCxtx2Er/" show="false"/>
     <elementParameter field="TEXT" name="COMMANDSEPARATOR" value="&quot;;&quot;"/>
     <elementParameter field="TABLE" name="COMMANDS">
       <elementValue elementRef="COMMAND" value="(String)globalMap.get(&quot;featureCommand&quot;)"/>
@@ -780,7 +780,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="installFeature" name="tSSH_5"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1888" posY="1184">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1888" posY="704">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_4" show="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="String outputTSSH = ((String)globalMap.get(&quot;tSSH_5_STDOUT&quot;)).replaceAll(&quot;\\x1b\\[[0-9;]*[mGKHF]&quot;, &quot;&quot;);&#xA;String [] features = outputTSSH.split(&quot;\n&quot;);&#xA;String featureName = (String)globalMap.get(&quot;featureName&quot;);&#xA;&#xA;JSONObject rootObj = new JSONObject();&#xA;JSONArray dataObj = new JSONArray();&#xA;JSONObject errorObj = new JSONObject();&#xA;&#xA;rootObj.put(&quot;data&quot;, dataObj);&#xA;rootObj.put(&quot;error&quot;, errorObj);&#xA;&#xA;for(String feature: features) {&#xA;&#xA;&#x9;String [] values = feature.split(&quot;\\|&quot;, 6);&#xA;&#xA;&#x9;if(featureName.equals(values[0].trim())) {&#xA;&#x9;&#x9;JSONObject obj = new JSONObject();&#xA;&#x9;&#x9;dataObj.put(obj);&#xA;&#xA;&#x9;&#x9;obj.put(&quot;Name&quot;, values[0].trim());&#xA;&#x9;&#x9;obj.put(&quot;Version&quot;, values[1].trim());&#xA;&#x9;&#x9;obj.put(&quot;Required&quot;, values[2].trim());&#xA;&#x9;&#x9;obj.put(&quot;State&quot;, values[3].trim());&#xA;&#x9;&#x9;obj.put(&quot;Repository&quot;, values[4].trim());&#xA;&#x9;&#x9;obj.put(&quot;Description&quot;, values[5].trim());&#xA;&#x9;}&#xA;}&#xA;&#xA;row11.body = rootObj.toString();&#xA;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
@@ -789,7 +789,7 @@
       <column key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="2080" posY="1344">
+  <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="2080" posY="704">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTResponse_7" show="false"/>
     <elementParameter field="REST_RESPONSE_SCHEMA_TYPE" name="RESPONSE_TYPE" value="id_String"/>
     <elementParameter field="CLOSED_LIST" name="STATUS_CODE" value="200"/>
@@ -802,7 +802,7 @@
       <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="992" posY="1536">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="992" posY="928">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_5" show="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="String output = ((String)globalMap.get(&quot;tSSH_6_STDOUT&quot;)).replaceAll(&quot;\\x1b\\[[0-9;]*[mGKHF]&quot;, &quot;&quot;);&#xA;String featureName = (String)globalMap.get(&quot;featureName&quot;);&#xA;JSONObject rootObj = new JSONObject();&#xA;JSONArray dataObj = new JSONArray();&#xA;JSONObject errorObj = new JSONObject();&#xA;rootObj.put(&quot;data&quot;, dataObj);&#xA;rootObj.put(&quot;error&quot;, errorObj);&#xA;String result = &quot;&quot;;&#xA;String command = &quot;&quot;;&#xA;//check if result is empty&#xA;if(output == null || output.equals(&quot;&quot;)){&#xA;&#x9;errorObj.put(&quot;message&quot;, &quot;Feature not found&quot;);&#xA;}&#xA;//result contains data&#xA;else {&#xA;&#x9;String[] rows = output.split(&quot;\n&quot;);&#xA;&#x9;boolean isFound = false;&#xA;&#x9;&#xA;&#x9;for(String row : rows){&#xA;&#x9;&#x9;String[] parts = row.split(&quot;\\|&quot;, 6);&#xA;&#x9;&#x9;&#xA;&#x9;&#x9;//check if we have exact match&#xA;&#x9;&#x9;if(featureName.equals(parts[0].trim())){&#xA;&#x9;&#x9;&#x9;isFound = true;&#xA;&#x9;&#x9;&#x9;&#xA;&#x9;&#x9;&#x9;//check feature state: if it is Started&#xA;&#x9;&#x9;&#x9;if(&quot;Started&quot;.equals(parts[3].trim())){&#xA;&#x9;&#x9;&#x9;&#x9;command = &quot;feature:uninstall &quot; + featureName;&#xA;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;&#x9;else {&#xA;&#x9;&#x9;&#x9;&#x9;errorObj.put(&quot;message&quot;, &quot;Feature is already uninstalled&quot;);&#xA;&#x9;&#x9;&#x9;}&#xA;&#x9;&#x9;}&#xA;&#x9;}&#xA;&#x9;&#xA;&#x9;if(!isFound){&#xA;&#x9;&#x9;errorObj.put(&quot;message&quot;, &quot;Feature not found&quot;);&#xA;&#x9;}&#xA;}&#xA;result = rootObj.toString();&#xA;row14.command = command;&#xA;row14.result = result;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
@@ -812,7 +812,7 @@
       <column comment="" key="false" length="-1" name="command" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="1184" posY="1696">
+  <node componentName="tXMLMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="1184" posY="928">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tXMLMap_4" show="false"/>
     <elementParameter field="EXTERNAL" name="MAP" value=""/>
     <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false" show="false"/>
@@ -842,18 +842,18 @@
       <connections xsi:type="TalendXMLMap:Connection" source="//@node.32/@nodeData/@inputTrees.0/@nodes.1" target="//@node.32/@nodeData/@outputTrees.0/@nodes.0"/>
     </nodeData>
   </node>
-  <node componentName="tSSH" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1440" posY="1536">
+  <node componentName="tSSH" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1440" posY="928">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSSH_7" show="false"/>
     <elementParameter field="TEXT" name="HOST" value="context.sshhost"/>
     <elementParameter field="TEXT" name="PORT" value="context.sshport"/>
     <elementParameter field="TEXT" name="USER" value="context.sshusername"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" value="PASSWORD"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:DVz3DVCJvEg/jg97z6S417S3kIDKbvWpwPft+eodWmmzER+QdoMoBXCAU93pPb0="/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:PyaYl9IwgY30doK59xMJnFzu4Rzp/VcHez7S8cB1GF3suqbXogYjpH/ZsTyogYE="/>
     <elementParameter field="CHECK" name="PTY" value="false"/>
     <elementParameter field="CLOSED_LIST" name="STANDARDOUTPUT" value="TO_GLOBAL_VARIABLE"/>
     <elementParameter field="CLOSED_LIST" name="ERROROUTPUT" value="TO_GLOBAL_VARIABLE"/>
     <elementParameter field="FILE" name="PRIVATEKEY" value="&quot;/.ssh/id_dsa&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASSPHRASE" value="enc:system.encryption.key.v1:ZloToQV7Rz3v7jS1xPrg8ZeXB55IAiy5/Zx0XJ804x5z8Tdm" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" value="enc:system.encryption.key.v1:vhHKL5NknCEazkJgizopyaJSleuDd7MIufPy2Euq+SO/08kp" show="false"/>
     <elementParameter field="TEXT" name="COMMANDSEPARATOR" value="&quot;;&quot;"/>
     <elementParameter field="TABLE" name="COMMANDS">
       <elementValue elementRef="COMMAND" value="uninstallFeature.uninstallCommand"/>
@@ -864,7 +864,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="installFeature" name="tSSH_7"/>
   </node>
-  <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1440" posY="1696">
+  <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1440" posY="1024">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTResponse_8" show="false"/>
     <elementParameter field="REST_RESPONSE_SCHEMA_TYPE" name="RESPONSE_TYPE" value="id_String"/>
     <elementParameter field="CLOSED_LIST" name="STATUS_CODE" value="400"/>
@@ -878,18 +878,18 @@
       <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tSSH" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1664" posY="1536">
+  <node componentName="tSSH" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1664" posY="928">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tSSH_8" show="false"/>
     <elementParameter field="TEXT" name="HOST" value="context.sshhost"/>
     <elementParameter field="TEXT" name="PORT" value="context.sshport"/>
     <elementParameter field="TEXT" name="USER" value="context.sshusername"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" value="PASSWORD"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:HwM/0+W0cto6dueNcw4Re2bgZhwWNSQWzFKUiBaruFX5AWOVaPzPaVOlGx/6N9U="/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:wjGk92tVAt+65+3bnOuvLAf4mSjUQY2BMT1M8/bA93fVXbiqAagA58Hc9LyaXRU="/>
     <elementParameter field="CHECK" name="PTY" value="false"/>
     <elementParameter field="CLOSED_LIST" name="STANDARDOUTPUT" value="TO_GLOBAL_VARIABLE"/>
     <elementParameter field="CLOSED_LIST" name="ERROROUTPUT" value="TO_GLOBAL_VARIABLE"/>
     <elementParameter field="FILE" name="PRIVATEKEY" value="&quot;/.ssh/id_dsa&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASSPHRASE" value="enc:system.encryption.key.v1:+Tg/hohpcbgapKWXFzWNoJQNhS5+4JptPAwtO9kY5lRdf+1P" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" value="enc:system.encryption.key.v1:hVrqxAmwzLNq3716dTlg6hhLXb3yM2NZwGtnhuVBuFXT1pSY" show="false"/>
     <elementParameter field="TEXT" name="COMMANDSEPARATOR" value="&quot;;&quot;"/>
     <elementParameter field="TABLE" name="COMMANDS">
       <elementValue elementRef="COMMAND" value="(String)globalMap.get(&quot;featureCommand&quot;)"/>
@@ -900,7 +900,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" label="installFeature" name="tSSH_8"/>
   </node>
-  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1888" posY="1536">
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1888" posY="928">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_6" show="false"/>
     <elementParameter field="MEMO_JAVA" name="CODE" value="String outputTSSH = ((String)globalMap.get(&quot;tSSH_8_STDOUT&quot;)).replaceAll(&quot;\\x1b\\[[0-9;]*[mGKHF]&quot;, &quot;&quot;);&#xA;String [] features = outputTSSH.split(&quot;\n&quot;);&#xA;String featureName = (String)globalMap.get(&quot;featureName&quot;);&#xA;&#xA;JSONObject rootObj = new JSONObject();&#xA;JSONArray dataObj = new JSONArray();&#xA;JSONObject errorObj = new JSONObject();&#xA;&#xA;rootObj.put(&quot;data&quot;, dataObj);&#xA;rootObj.put(&quot;error&quot;, errorObj);&#xA;&#xA;for(String feature: features) {&#xA;&#xA;&#x9;String [] values = feature.split(&quot;\\|&quot;, 6);&#xA;&#xA;&#x9;if(featureName.equals(values[0].trim())) {&#xA;&#x9;&#x9;JSONObject obj = new JSONObject();&#xA;&#x9;&#x9;dataObj.put(obj);&#xA;&#xA;&#x9;&#x9;obj.put(&quot;Name&quot;, values[0].trim());&#xA;&#x9;&#x9;obj.put(&quot;Version&quot;, values[1].trim());&#xA;&#x9;&#x9;obj.put(&quot;Required&quot;, values[2].trim());&#xA;&#x9;&#x9;obj.put(&quot;State&quot;, values[3].trim());&#xA;&#x9;&#x9;obj.put(&quot;Repository&quot;, values[4].trim());&#xA;&#x9;&#x9;obj.put(&quot;Description&quot;, values[5].trim());&#xA;&#x9;}&#xA;}&#xA;&#xA;row15.body = rootObj.toString();&#xA;"/>
     <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
@@ -909,7 +909,7 @@
       <column key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
   </node>
-  <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="2080" posY="1696">
+  <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="2080" posY="928">
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTResponse_9" show="false"/>
     <elementParameter field="REST_RESPONSE_SCHEMA_TYPE" name="RESPONSE_TYPE" value="id_String"/>
     <elementParameter field="CLOSED_LIST" name="STATUS_CODE" value="200"/>
@@ -921,6 +921,40 @@
     <metadata connector="FLOW" name="tRESTResponse_9">
       <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
     </metadata>
+  </node>
+  <node componentName="tRESTResponse" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1088" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTResponse_10" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="REST_RESPONSE_SCHEMA_TYPE" name="RESPONSE_TYPE" value="id_String"/>
+    <elementParameter field="CLOSED_LIST" name="STATUS_CODE" value="400"/>
+    <elementParameter field="TEXT" name="CUSTOM_STATUS_CODE" value="200" show="false"/>
+    <elementParameter field="TABLE" name="RESPONSE_HEADERS"/>
+    <elementParameter field="CHECK" name="UNWRAP_JSON_RESPONSE" value="false"/>
+    <elementParameter field="TEXT" name="JSON_ARRAY_KEYS" value=""/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRESTResponse_10">
+      <column defaultValue="" key="false" length="0" name="body" nullable="true" precision="0" sourceType="" type="id_String" originalLength="-1" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tMap" componentVersion="2.1" offsetLabelX="0" offsetLabelY="0" posX="896" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
+    <elementParameter field="CHECK" name="ACTIVATE" value="false"/>
+    <elementParameter field="EXTERNAL" name="MAP" value=""/>
+    <elementParameter field="CLOSED_LIST" name="LINK_STYLE" value="AUTO"/>
+    <elementParameter field="DIRECTORY" name="TEMPORARY_DATA_DIRECTORY" value=""/>
+    <elementParameter field="IMAGE" name="PREVIEW" value="_71lSAJWYEe6ste-JhJ5Khg-tMap_1-PREVIEW.bmp"/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="true" show="false"/>
+    <elementParameter field="CHECK" name="LKUP_PARALLELIZE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="LEVENSHTEIN" value="0" show="false"/>
+    <elementParameter field="TEXT" name="JACCARD" value="0" show="false"/>
+    <elementParameter field="CHECK" name="ENABLE_AUTO_CONVERT_TYPE" value="false" show="false"/>
+    <elementParameter field="TEXT" name="ROWS_BUFFER_SIZE" value="2000000"/>
+    <elementParameter field="CHECK" name="CHANGE_HASH_AND_EQUALS_FOR_BIGDECIMAL" value="true"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <nodeData xsi:type="TalendMapper:MapperData">
+      <uiProperties/>
+      <varTables sizeState="INTERMEDIATE" name="Var" minimized="true"/>
+    </nodeData>
   </node>
   <connection connectorName="WRONG_CALLS" label="row6" lineStyle="0" metaname="WRONG_CALLS" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tRESTRequest_1" target="tXMLMap_3">
     <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
@@ -1140,6 +1174,16 @@
   </subjob>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" value="tJava_6" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tRESTResponse_10" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" value="tMap_1" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" value="92;131;150" show="false"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
