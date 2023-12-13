@@ -1,0 +1,20 @@
+{
+  "itemId" : "_6q5MAJjDEe6_Nr_iR3EOFA",
+  "contextList" : [ {
+    "contextName" : "Default",
+    "repoId" : "_1IbfsJgYEe6pkqsecJ-ecw",
+    "parameterList" : [ {
+      "id" : "_-V_bcJgYEe6pkqsecJ-ecw",
+      "name" : "sshhost"
+    }, {
+      "id" : "_-V_bc5gYEe6pkqsecJ-ecw",
+      "name" : "sshpassword"
+    }, {
+      "id" : "_-V_bcZgYEe6pkqsecJ-ecw",
+      "name" : "sshport"
+    }, {
+      "id" : "_-V_bcpgYEe6pkqsecJ-ecw",
+      "name" : "sshusername"
+    } ]
+  } ]
+}
