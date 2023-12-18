@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <talendfile:ProcessType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendXMLMap="http://www.talend.org/xmlmap" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" defaultContext="Default" jobType="Standard">
   <context confirmationNeeded="false" name="Default">
-    <contextParameter comment="" name="new1" prompt="new1?" promptNeeded="false" repositoryContextId="built-in" type="id_String" value="" internalId="_SL5KsJggEe64pLRmafbJpg"/>
     <contextParameter comment="" name="sshhost" prompt="sshhost?" promptNeeded="false" repositoryContextId="_1IbfsJgYEe6pkqsecJ-ecw" type="id_String" value="localhost" internalId="_SL5KsZggEe64pLRmafbJpg"/>
     <contextParameter comment="" name="sshpassword" prompt="sshpassword?" promptNeeded="false" repositoryContextId="_1IbfsJgYEe6pkqsecJ-ecw" type="id_String" value="tadmin" internalId="_SL5KspggEe64pLRmafbJpg"/>
     <contextParameter comment="" name="sshport" prompt="sshport?" promptNeeded="false" repositoryContextId="_1IbfsJgYEe6pkqsecJ-ecw" type="id_Integer" value="8101" internalId="_SL5Ks5ggEe64pLRmafbJpg"/>
@@ -49,7 +48,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:XjxdmHHIEF8Cf3G9cPK8p6u5tL3B+KA1j32K8vTB" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" value="enc:system.encryption.key.v1:29W9C9apRMAJaS2mtOZbaMtth4tY99vrRiIsGpYJ" show="false"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" value="&quot;&quot;" show="false"/>
@@ -84,7 +83,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" value="&quot;&quot;" show="false"/>
     <elementParameter field="TEXT" name="USER" value="&quot;&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:pPyPRMQixJ4YVq+BGVZiwFvg5kyYMagtajopIbKX" show="false"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:5qufQ8SSR7LUp1/mVUxN2fNolNmqm6mDw4JC2Viu" show="false"/>
     <elementParameter field="FILE" name="DBFILE" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" value="&quot;&quot;" show="false"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" value="&quot;&quot;" show="false"/>
@@ -957,12 +956,12 @@
     <elementParameter field="TEXT" name="PORT" value="context.sshport"/>
     <elementParameter field="TEXT" name="USER" value="context.sshusername"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" value="PASSWORD"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:VriKBzFeV28IR6JA9UV1tKGw/6hvtdT25APjuhC/sFEna18XeX55qbkkWLaDxKE="/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:zgnW8x8U8dtXJSi/uLGAQ0x3HdrxD4Ng/alrTSoO9G1QBnpif8AmKMMEKAIL63g="/>
     <elementParameter field="CHECK" name="PTY" value="false"/>
     <elementParameter field="CLOSED_LIST" name="STANDARDOUTPUT" value="TO_GLOBAL_VARIABLE"/>
     <elementParameter field="CLOSED_LIST" name="ERROROUTPUT" value="TO_GLOBAL_VARIABLE"/>
     <elementParameter field="FILE" name="PRIVATEKEY" value="&quot;/.ssh/id_dsa&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASSPHRASE" value="enc:system.encryption.key.v1:9WmT/SvsqfqYPFpK6Y2ZmBMIOVCMrJgqujjBfRFiP6MspIi4" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" value="enc:system.encryption.key.v1:+RtCwEyeqcuMfcQSq1hGk/TpxgQv/ZaUZQZGeNM0e8Gul4fX" show="false"/>
     <elementParameter field="TEXT" name="COMMANDSEPARATOR" value="&quot;;&quot;"/>
     <elementParameter field="TABLE" name="COMMANDS">
       <elementValue elementRef="COMMAND" value="(String)globalMap.get(&quot;featureCommand&quot;)"/>
@@ -1068,12 +1067,12 @@
     <elementParameter field="TEXT" name="PORT" value="context.sshport"/>
     <elementParameter field="TEXT" name="USER" value="context.sshusername"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" value="PASSWORD"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:4viM9WYZ7Cz1+COybKvUdxwGCj+VoB+QbI3l0Jq0J55vI/kKQz1A89wcUbQTLi0="/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:9EZyq1xy7sx7VFc83yu7d9ObbDa6/Oos+q0sC6nNCEFBfupFWhCGsOXmN61nxW8="/>
     <elementParameter field="CHECK" name="PTY" value="false"/>
     <elementParameter field="CLOSED_LIST" name="STANDARDOUTPUT" value="TO_GLOBAL_VARIABLE"/>
     <elementParameter field="CLOSED_LIST" name="ERROROUTPUT" value="TO_GLOBAL_VARIABLE"/>
     <elementParameter field="FILE" name="PRIVATEKEY" value="&quot;/.ssh/id_dsa&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASSPHRASE" value="enc:system.encryption.key.v1:+W2GqkDlMfxtS3IBVwXSRKO+rBStjJsGhpPanEuIC2W+crWl" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" value="enc:system.encryption.key.v1:rz5MskaPW7ar4610w5IwoTeVC12bRqqGHDjLxLCWSbA1EYjP" show="false"/>
     <elementParameter field="TEXT" name="COMMANDSEPARATOR" value="&quot;;&quot;"/>
     <elementParameter field="TABLE" name="COMMANDS">
       <elementValue elementRef="COMMAND" value="(String)globalMap.get(&quot;featureCommand&quot;)"/>
@@ -1136,12 +1135,12 @@
     <elementParameter field="TEXT" name="PORT" value="context.sshport"/>
     <elementParameter field="TEXT" name="USER" value="context.sshusername"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" value="PASSWORD"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:poMwVCLlRDEsJmabV9NOzNiPGdIYsIE1ZI8oxnkkM0pcbXLysjcNP7aZZTKIDrw="/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:Jofo5+4K6gKR5nhuRWt+EBAxCFk5RRaVn+COIyKzlayos92LPTz4B4/DgSrYD1w="/>
     <elementParameter field="CHECK" name="PTY" value="false"/>
     <elementParameter field="CLOSED_LIST" name="STANDARDOUTPUT" value="TO_CONSOLE"/>
     <elementParameter field="CLOSED_LIST" name="ERROROUTPUT" value="TO_CONSOLE"/>
     <elementParameter field="FILE" name="PRIVATEKEY" value="&quot;/.ssh/id_dsa&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASSPHRASE" value="enc:system.encryption.key.v1:vrZqjq3rbrd/jwJMOp9ssdkDmiL3alKfSodY6VcRfflsaA9t" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" value="enc:system.encryption.key.v1:HU4qQlUM3MJzBjLOM2I71/cSgPIXCeBp39Fajho9kxHqRr15" show="false"/>
     <elementParameter field="TEXT" name="COMMANDSEPARATOR" value="&quot;;&quot;"/>
     <elementParameter field="TABLE" name="COMMANDS">
       <elementValue elementRef="COMMAND" value="(String)globalMap.get(&quot;installCommand&quot;)"/>
@@ -1160,12 +1159,12 @@
     <elementParameter field="TEXT" name="PORT" value="context.sshport"/>
     <elementParameter field="TEXT" name="USER" value="context.sshusername"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" value="PASSWORD"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:486IfVnPIr/CMU3tkGYDs0woXr0w71+KJbsZFXt5ycxliKipUiWuhwZj3hMfNv8="/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:/6XHdpw8t72PaPqchQeWNWoJ+8oBGQOHNeP9Toj+pHoN4GuNRWOKGTBm+rW1iaM="/>
     <elementParameter field="CHECK" name="PTY" value="false"/>
     <elementParameter field="CLOSED_LIST" name="STANDARDOUTPUT" value="TO_GLOBAL_VARIABLE"/>
     <elementParameter field="CLOSED_LIST" name="ERROROUTPUT" value="TO_GLOBAL_VARIABLE"/>
     <elementParameter field="FILE" name="PRIVATEKEY" value="&quot;/.ssh/id_dsa&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASSPHRASE" value="enc:system.encryption.key.v1:o6qHj+0V/+gzxZViyKceU0xpTqMfQZCvCRh6i4ue/mlQWfUO" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" value="enc:system.encryption.key.v1:ilZh2Z9Ez6Ngxtl7lTUecBbsrot9WmiVIyH0QlbvLlGMgw8/" show="false"/>
     <elementParameter field="TEXT" name="COMMANDSEPARATOR" value="&quot;;&quot;"/>
     <elementParameter field="TABLE" name="COMMANDS">
       <elementValue elementRef="COMMAND" value="(String)globalMap.get(&quot;uninstallCommand&quot;)"/>
@@ -1184,12 +1183,12 @@
     <elementParameter field="TEXT" name="PORT" value="context.sshport"/>
     <elementParameter field="TEXT" name="USER" value="context.sshusername"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" value="PASSWORD"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:Lm1vR5TIyqaw5oZEWPe6JOoLIB6WhK1ZcqzZPsfpWA0Jy5MXiyYwdMXh+Qw+O0w="/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:Gg2/IFdCHrPwua59yQ3zqX5dxG2Ql/HWplvjohQ5v4ceCes8xgev6EsTQqqqJjg="/>
     <elementParameter field="CHECK" name="PTY" value="false"/>
     <elementParameter field="CLOSED_LIST" name="STANDARDOUTPUT" value="TO_GLOBAL_VARIABLE"/>
     <elementParameter field="CLOSED_LIST" name="ERROROUTPUT" value="TO_GLOBAL_VARIABLE"/>
     <elementParameter field="FILE" name="PRIVATEKEY" value="&quot;/.ssh/id_dsa&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASSPHRASE" value="enc:system.encryption.key.v1:c5HZmwgsAS/+ACGQlo20tmhx9a69sd6pXLBrenx/0hLKuLF9" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" value="enc:system.encryption.key.v1:/EiWrduyYHd4r4cmJND9K9qTXFED+Z2Lgr4k679PcopIbWHb" show="false"/>
     <elementParameter field="TEXT" name="COMMANDSEPARATOR" value="&quot;;&quot;"/>
     <elementParameter field="TABLE" name="COMMANDS">
       <elementValue elementRef="COMMAND" value="(String)globalMap.get(&quot;command&quot;)"/>
@@ -1206,12 +1205,12 @@
     <elementParameter field="TEXT" name="PORT" value="context.sshport"/>
     <elementParameter field="TEXT" name="USER" value="context.sshusername"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" value="PASSWORD"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:W41z/czxDJLTHC55/13/Sm2z2akxxHiQufwtwox2RaVNDTxJa1uSxdCwIvfBSNY="/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:YQiQY9zRA1+83f9s6n/XERDMEMPK/CSNSgELBABEw1a3+TBc/XJv/dsPaQB6QpU="/>
     <elementParameter field="CHECK" name="PTY" value="false"/>
     <elementParameter field="CLOSED_LIST" name="STANDARDOUTPUT" value="TO_GLOBAL_VARIABLE"/>
     <elementParameter field="CLOSED_LIST" name="ERROROUTPUT" value="TO_GLOBAL_VARIABLE"/>
     <elementParameter field="FILE" name="PRIVATEKEY" value="&quot;/.ssh/id_dsa&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASSPHRASE" value="enc:system.encryption.key.v1:Or6fUZHdVAT72M+9gNmig4gpr5sdxtOgOq+xH22SOQFf0IJ3" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" value="enc:system.encryption.key.v1:xnJha0jmbYYt/4BCi6+1HNI+Uq8vpJMv4t/AVimKFyRLUu3t" show="false"/>
     <elementParameter field="TEXT" name="COMMANDSEPARATOR" value="&quot;;&quot;"/>
     <elementParameter field="TABLE" name="COMMANDS">
       <elementValue elementRef="COMMAND" value="(String)globalMap.get(&quot;command&quot;)"/>
@@ -1230,12 +1229,12 @@
     <elementParameter field="TEXT" name="PORT" value="context.sshport"/>
     <elementParameter field="TEXT" name="USER" value="context.sshusername"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" value="PASSWORD"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:MIlp8abCU2cb0hJ5dA27VkzKmbZadVeZu67aCkqkzeZJzGwny7QjA3YPAQ+J7y8="/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:jfGYTR7mv5pc5ReKVuFbX2wD2mmmu5Rfmz8omZNyKhgccOPChuT7U6tyOeC78Dc="/>
     <elementParameter field="CHECK" name="PTY" value="false"/>
     <elementParameter field="CLOSED_LIST" name="STANDARDOUTPUT" value="TO_GLOBAL_VARIABLE"/>
     <elementParameter field="CLOSED_LIST" name="ERROROUTPUT" value="TO_GLOBAL_VARIABLE"/>
     <elementParameter field="FILE" name="PRIVATEKEY" value="&quot;/.ssh/id_dsa&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASSPHRASE" value="enc:system.encryption.key.v1:c7apznssx5fGG4/kaIq+s29wgZJnvJqOE6yZCSVbSNMOOfcN" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" value="enc:system.encryption.key.v1:16yJVLo7FqZR77RvJ715Zp5pnqSWnL6mcgJ8rJbRaCaRQsxs" show="false"/>
     <elementParameter field="TEXT" name="COMMANDSEPARATOR" value="&quot;;&quot;"/>
     <elementParameter field="TABLE" name="COMMANDS">
       <elementValue elementRef="COMMAND" value="(String)globalMap.get(&quot;featureCommand&quot;)"/>
@@ -1252,12 +1251,12 @@
     <elementParameter field="TEXT" name="PORT" value="context.sshport"/>
     <elementParameter field="TEXT" name="USER" value="context.sshusername"/>
     <elementParameter field="CLOSED_LIST" name="AUTH_METHOD" value="PASSWORD"/>
-    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:sznYFc4YJCkBkS63hFpBfyjxrpLX9AUGOz3s58mQZwcAaX2bNI0L25tiNhih70M="/>
+    <elementParameter field="PASSWORD" name="PASSWORD" value="enc:system.encryption.key.v1:JqmWgIZVAmgqM8ckwNg9p7UTGUtIDnPb+7DxHry2wDgXvzTXuw5NuIfBdz6o4iU="/>
     <elementParameter field="CHECK" name="PTY" value="false"/>
     <elementParameter field="CLOSED_LIST" name="STANDARDOUTPUT" value="TO_GLOBAL_VARIABLE"/>
     <elementParameter field="CLOSED_LIST" name="ERROROUTPUT" value="TO_GLOBAL_VARIABLE"/>
     <elementParameter field="FILE" name="PRIVATEKEY" value="&quot;/.ssh/id_dsa&quot;" show="false"/>
-    <elementParameter field="PASSWORD" name="PASSPHRASE" value="enc:system.encryption.key.v1:eQuJinjQY72Lg32dJfyTjbxqrTTgmmh6L3q+l8RATSdUTAOB" show="false"/>
+    <elementParameter field="PASSWORD" name="PASSPHRASE" value="enc:system.encryption.key.v1:yOQiQXP5iibTQ02Kl4gwvZjNtFQRN4w1S+7l6FZgcWaUB+UY" show="false"/>
     <elementParameter field="TEXT" name="COMMANDSEPARATOR" value="&quot;;&quot;"/>
     <elementParameter field="TABLE" name="COMMANDS">
       <elementValue elementRef="COMMAND" value="(String)globalMap.get(&quot;featureCommand&quot;)"/>
